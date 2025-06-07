@@ -305,6 +305,18 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+    .inicio_redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+        margin-top: 0.5rem;
+    }
+    
+    .inicio_contato {
+        text-align: center;
+    }
 
     #inicio img {
         width: 150px;
