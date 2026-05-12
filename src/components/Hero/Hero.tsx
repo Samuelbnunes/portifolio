@@ -1,4 +1,4 @@
-import { Github, Linkedin, Instagram, Mail } from 'lucide-react';
+import { Github, Linkedin, Instagram } from 'lucide-react';
 import styles from './Hero.module.css';
 
 const Hero = () => {
