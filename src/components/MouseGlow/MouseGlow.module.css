@@ -1,0 +1,26 @@
+.glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 800px;
+  margin-left: -400px;
+  margin-top: -400px;
+  /* Cria uma luz radial azul suave que some nas bordas */
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.06) 0%, rgba(0, 0, 0, 0) 50%);
+  border-radius: 50%;
+  /* pointer-events: none é CRÍTICO para que a luz não bloqueie os cliques nos botões reais da página */
+  pointer-events: none;
+  z-index: 9999;
+  /* Cria um atraso suave para dar a sensação de que está flutuando atrás do mouse */
+  transition: transform 0.15s ease-out;
+  /* Otimização de performance para animações */
+  will-change: transform;
+}
+
+/* Esconde o efeito em telas pequenas (mobile), já que lá não existe mouse */
+@media (max-width: 768px) {
+  .glow {
+    display: none;
+  }
+}
