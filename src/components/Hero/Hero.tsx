@@ -33,8 +33,8 @@ const Hero = () => {
 
         <div className={styles.heroImage}>
           <div className={styles.imageWrapper}>
-            {/* Foto de perfil existente no diretório public/assets após configuração */}
-            <img src="./assets/img/foto_perfil.jpg" alt="Samuel Barquel Nunes" />
+            {/* Foto de perfil acessível via BASE_URL após configuração do publicDir */}
+            <img src={`${import.meta.env.BASE_URL}img/foto_perfil.jpg`} alt="Samuel Barquel Nunes" />
           </div>
         </div>
       </div>

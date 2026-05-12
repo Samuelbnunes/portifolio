@@ -50,7 +50,7 @@ const Education = () => {
                   Acesse meu currículo completo em PDF para conferir minha trajetória detalhada, certificações e histórico profissional.
                 </p>
                 <a 
-                  href="/assets/docs/curriculo_profissional.pdf" 
+                  href={`${import.meta.env.BASE_URL}docs/curriculo_profissional.pdf`} 
                   download="Samuel_Nunes_Curriculo.pdf"
                   className={styles.downloadBtn}
                 >
